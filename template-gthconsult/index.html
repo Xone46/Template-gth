@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+ <!-- Start Header    -->
+    <div class="header">
+        <div class="container">
+            <div class="top">
+                <ul>
+                  <li> GTHCONSULT Bureau de contrôle agréé par l’état</li>
+                  <li><i class="fa-solid fa-location-dot"></i><span> Bd Mohammed 6 Lot Al massira 3<sup>ème</sup> Étage Appartement N<sup>o</sup> 09, Mohammédia, Maroc</span></li>
+                  <li><i class="fa-solid fa-phone"></i><span> +212 5 23 27 27 74</span> <i class="fa-solid fa-print"></i><span> +212 5 23 27 29 79</span></li>
+                </ul>
+            </div>
+
+
+            <div class="bottom">
+                <div class="logo">
+                    <img src="./assets/logogth.png" alt="">
+                </div>
+                <div class="nav">
+                  <ul>
+                    <li><a href="/#gthconsult">GTHCONSULT</a></li>
+                    <li><a href="/#prestation"> Nos prestations</a></li>
+                    <li><a href="/#solutions"> Nos solutions</a></li>
+                    <li><a href="/#realisations"> Réalisations</a></li>
+                    <li><a href="/#contact"> Contacter</a></li>
+                    <li><a> <router-link to="/client">Clients </router-link></a></li>             
+                  </ul>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+ <!-- End Header    -->
+
+<!-- Start Landing -->
+
+    <div class="landing">
+        <div class="direction">
+
+            <div class="top">
+                  <img src="./assets/logogth.png" alt="logo gthconsult">
+                  <h1>
+                    Pour le respect de vos obligations réglementaires et volontaires
+                  </h1>
+                  <p>
+                    Vérifications Réglementaires ou volontaires des installations
+                    techniques et des risques au travail
+                  </p>
+            </div>
+
+            <div class="medium">
+                <ul>
+                    <li><img src="./assets/icon/left.png" alt=""></li>
+                    <li><img src="./assets/icon/right.png" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="bottom">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- End Landing -->
+
+<!-- Start GTHCONSULT -->
+
+    <div class="gthconsult">
+        <h1>Notre objectif est de répondre à vos obligations réglementaires et volontaires</h1>
+        <h1>GTHCONSULT</h1>
+       <div class="container">
+            <div class="desc">
+                <div>
+                    <img src="./assets/icon/risk.png" alt="Maîtrise des risques" />
+                    <h2>Maîtrise des risques</h2>
+                </div>
+                <span>Accompagner les chefs d’établissements et les exploitantspour répondre à leurs obligations réglementaires ou volontaires en matière de gestion des risques professionnels, protection des personnes et des biens ainsi que de l’environnement .</span>
+            </div>
+            <div class="desc">
+                <div>
+                    <img src="./assets/icon/know.png" alt="Maîtrise des risques" />
+                    <h2>Partage du savoir</h2>
+                </div>
+                <span> Notre capital est notre savoir-faire, nos compétences et lerespect de la réglementation. Notre vocation de tierce partie indépendante nous impose le partage de ces compétences et de ces savoirs entre nos collaborateurs, avec nos clients et les institutions.</span>
+            </div>
+            <div class="desc"></div>
+            <div class="desc">
+                <div>
+                    <img src="./assets/icon/quality.png" alt="Interlocuteur privilégié" />
+                    <h2>Interlocuteur privilégié</h2>
+                </div>
+                <span> Mettre à la disposition de notre client un interlocuteurunique habilité à prendre toute décisions pour garantir la qualité de nos prestations, le respect de nos engagements et notre disponibilité pour nos clients.</span>
+            </div>
+
+            <div class="desc"></div>
+            <div class="desc"></div>
+            <div class="desc"> 
+               <div>
+                <img src="./assets/icon/help.png" alt="Nos valeurs" />
+                <h2>Nos valeurs</h2>
+               </div>
+               <img src="./assets/icon/valeur.png" alt="Nos valeurs" />
+            </div>
+            <div class="desc"></div>
+            <!--         
+                <h1>Nos valeurs</h1>
+                <img src="./assets/icon/valeur.png" alt="Nos valeurs" /> -->
+
+       </div> 
+    </div>
+
+<!-- End GTHCONSULT -->
+
+
+<!-- start métier -->
+            <div class="metier" id="metier">
+                <h1>Le leader des Bureau de Contrôle</h1>
+                <h1>Notre métier</h1>
+                <div class="container">
+                  <p>
+                    <span>GTHCONSULT </span> est un bureau de contrôle créé par deux
+                    ingénieurs agréés et pluridisciplinaires. Sa mission est d’accompagner
+                    les chefs d’établissements et les exploitants pour répondre à leurs
+                    obligations réglementaires ou volontaires en matière de contrôles
+                    réglementaires des installations techniques, gestion des risques
+                    professionnels, protection des personnes, des biens et de
+                    l’environnement.
+                  </p>
+                </div>
+              </div>
+          
+<!-- end métier -->
+
+<!-- start prestation -->
+     <div class="prestation" id="prestation">
+        <h1 alt="GTHCONSULT La confiance et l'efficacité"> GTHCONSULT La confiance et l'efficacité</h1>
+        <h1>Nos prestations</h1>
+        <div class="container">
+          <ul>
+            <li
+              @click="
+                () => {
+                  this.flagOne = !this.flagOne;
+                }
+              "
+            >
+              <span>Contrôles réglementaires des installations techniques</span
+              ><img
+                src="../assets/bottom.png"
+                alt="Contrôles réglementaires des installations techniques"
+              />
+              <ul v-if="flagOne">
+                <li>
+                  <img src="../assets/left-direction.png" alt="" /> Contrôle
+                  réglementaire des machines et engin de chantiers (référentiel
+                  Marocain)
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle de la
+                  conformité CE et risques machines (référentiel européen)
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle
+                  réglementaire des installations électriques
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle par
+                  thermographie infrarouge
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle par
+                  thermographie infrarouge avec délivrance attestation Q19
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle
+                  réglementaire des accessoires et appareils et de levage
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle
+                  réglementairedes installation d’ascenseurs et monte-charges
+                  accompagnés
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle des
+                  Éoliennes (inspecteurs certifiés GWO)
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle
+                  réglementaire des dispositifs incendie, désenfumage, sprinklage
+                  et grande cuisines
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle
+                  réglementaires des appareil à pression de gaz et vapeur
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle
+                  réglementaires : Rayonnage, portes et portails, quais niveleurs
+                  et lignes de vie
+                </li>
+              </ul>
+            </li>
+            <li
+              @click="
+                () => {
+                  this.flagTow = !this.flagTow;
+                }
+              "
+            >
+              <span>Contrôles risques travailleurs</span
+              ><img src="../assets/bottom.png" alt="" />
+              <ul v-if="flagTow">
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Mesures des
+                  doses de bruits absorbées par les travailleurs
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Mesures des
+                  taux d’éclairement aux postes de travail
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôles de la
+                  qualité de l’air intérieur
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Mesures des
+                  taux de vibrations absorbés par les travailleurs
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle de la
+                  légionnelle
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle de la
+                  potabilité de l’eau
+                </li>
+              </ul>
+            </li>
+            <li
+              @click="
+                () => {
+                  this.flagTree = !this.flagTree;
+                }
+              "
+            >
+              <span>Contrôles environnementaux</span
+              ><img src="../assets/bottom.png" alt="" />
+              <ul v-if="flagTree">
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle des
+                  rejets atmosphériques
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle des
+                  rejets liquides
+                </li>
+                <li>
+                  <img src="../assets/left-direction.png" alt="" />Contrôle de la
+                  nuisance sonore
+                </li>
+              </ul>
+            </li>
+            <li
+              @click="
+                () => {
+                  this.flagFour = !this.flagFour;
+                }
+              "
+            >
+              <span>Audits et assistances techniques </span
+              ><img src="../assets/bottom.png" alt="" />
+              <ul v-if="flagFour">
+                <li>
+                  <img src="../assets/hand.png" />Audits et assistances techniques
+                  pour l’élaboration des besoins, validation des plans et notes de
+                  calculs<br />
+                  suivi des travaux d’exécutions concernant les installations
+                  techniques :
+                  <ul>
+                    <li>
+                      <img
+                        src="../assets/left-direction.png"
+                        alt=""
+                      />installations électriques
+                    </li>
+                    <li>
+                      <img
+                        src="../assets/left-direction.png"
+                        alt=""
+                      />Installation d’ascenseur et monte-charges
+                    </li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Appareils
+                      de levage et lignes de vie
+                    </li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Rayonnage,
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <img src="../assets/hand.png" />Machines CE :
+                  <ul>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Analyse des
+                      risque
+                    </li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Validation
+                      du dossier technique
+                    </li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Validation
+                      de la notice d’instruction
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li
+              @click="
+                () => {
+                  this.flagFive = !this.flagFive;
+                }
+              "
+            >
+              <span>Formations réglementaires et techniques</span
+              ><img src="../assets/bottom.png" alt="" />
+              <ul v-if="flagFive">
+                <li>
+                  <img src="../assets/hand.png" />Habilitation électriques :
+                  <ul>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Personnel
+                      électricien et non électricien
+                    </li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Formation
+                      initiale et recyclage
+                    </li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Maintenance
+                      des installations ATEX
+                    </li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Différents
+                      types d’habilitation électrique
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <img src="../assets/hand.png" />Autorisation de conduite ou
+                  CACES :
+                  <ul>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Chariot
+                      automoteur
+                    </li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Pont
+                      roulant
+                    </li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Nacelle
+                    </li>
+                    <li><img src="../assets/left-direction.png" alt="" />PEMP</li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Engins de
+                      chantier
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <img src="../assets/hand.png" />Formation incendie :
+                  <ul>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Evacuation
+                      : guide-files et serre-files, exercices d’évacuation
+                    </li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Equipier de
+                      première intervention
+                    </li>
+                    <li>
+                      <img src="../assets/left-direction.png" alt="" />Equipier de
+                      second intervention
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <img src="../assets/hand.png" />Sauveteurs secouristes du
+                  travail
+                </li>
+                <li><img src="../assets/hand.png" />Travail en hauteur</li>
+                <li><img src="../assets/hand.png" />Gestes et postures</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+<!-- end prestation -->
+
+<!-- Start Realistaion  -->
+
+    <div class="realisations" id="realisations">
+        <h1>PROJETS ACHEVÉS</h1>
+        <div class="container">
+          <div class="left">
+            <div><img src="../assets/left.png" alt="" @click="leftPicture()"></div>
+          </div>
+          <div class="slider">
+            <div class="photo" v-bind:class="{ imageProject1: imageProject1, imageProject2: imageProject2, imageProject3: imageProject3, imageProject4: imageProject4, imageProject5: imageProject5 }"></div>
+          </div>
+          <div class="right">
+             <div><img src="../assets/right.png" alt="" @click="rightPicture()"></div>
+          </div>
+        </div>
+      </div>
+<!-- End Realisation -->
+
+
+<!-- start contacter -->
+   <div class="contact" id="contact">
+    <h1>Nous sommes à votre service</h1>
+    <h1>Contactez-nous</h1>
+    <div class="container">
+      <div class="form">
+        <p v-if="status != null">{{ msg }}</p>
+        <form action="">
+          <input type="text" placeholder="Nom" v-model="nom" />
+          <input type="text" placeholder="Prénom" v-model="prenom" />
+          <input type="text" placeholder="Téléphone" v-model="telephone" />
+          <input type="text" placeholder="E-mail" v-model="email" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="écrivez votre message ici"
+            v-model="message"
+          ></textarea>
+          <input
+            type="button"
+            value="Envoyer"
+            class="button"
+            @click="envoyer()"
+          />
+        </form>
+      </div>
+
+      <div class="adresse">
+        <h3>Informations de contact</h3>
+        <ul>
+          <li>
+            <i class="fa-solid fa-location-dot"></i
+            ><span>
+              Bd Mohammed 6 Lot Al massira 3<sup>ème</sup> Étage Appartement
+              N<sup>o</sup> 09, Mohammédia, Maroc</span
+            >
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i><span> +212 5 23 27 27 74</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-print"></i><span> +212 5 23 27 29 79</span>
+          </li>
+          <li>
+            <span> Website : www.gthconsult.ma | www.gthconsult.com</span>
+          </li>
+        </ul>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13277.758576351749!2d-7.3662913!3d33.697571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3e969925cc12ea26!2sGTH%20Consult!5e0!3m2!1sar!2sma!4v1646570156563!5m2!1sar!2sma"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+<!-- end contact -->
+
+</body>
+</html>
